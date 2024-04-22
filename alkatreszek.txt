@@ -1,0 +1,6 @@
+Kondenzátor, 10.5, 100
+Ellenállás, 5.2, 200
+Tranzisztor, 8.75, BC547
+Kondenzátor, 12.8, 150
+Ellenállás, 3.7, 300
+Tranzisztor, 6.9, 2N2222

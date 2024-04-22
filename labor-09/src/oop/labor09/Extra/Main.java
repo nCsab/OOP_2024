@@ -32,5 +32,30 @@ public class Main {
 
         //7.
         System.out.println("\nCsak az ellenállás az áramkör része: " + aramkor.csakEllenallasok());
+
+        //6.
+        Aramkor aramkor1 = new Aramkor();
+        aramkor1.alkatreszHozzaad(kondenzator);
+        aramkor1.alkatreszHozzaad(ellenallas);
+
+        Aramkor aramkor2 = new Aramkor();
+        aramkor2.alkatreszHozzaad(ellenallas);
+        aramkor2.alkatreszHozzaad(ellenallas);
+
+        System.out.println("\nAramkor1 és Aramkor2 egyenlőek: " + aramkor1.equals(aramkor2));
+
+        double eredoEllenallas = aramkor2.eredoEllenallas();
+        if (eredoEllenallas != -1) {
+            System.out.println("\nEredő ellenállás: " + eredoEllenallas + " Ω");
+        } else {
+            System.out.println("\nNem csak ellenállások vannak az áramkörben.");
+        }
+
+        System.out.println("\n");
+        String filename = "alkatreszek.txt";
+        Aramkor aramkorFile = new Aramkor(filename);
+
+        System.out.println("Az áramkör tartalma:");
+        System.out.println(aramkorFile);
     }
 }
