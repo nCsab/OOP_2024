@@ -1,0 +1,3 @@
+ID, Firstname, Last name, Number of bank accounts
+1, John, Doe, [BankAccount | accountNumber='OTP0000001'| balance=1000.0', BankAccount | accountNumber='OTP0000003'| balance=1000.0']
+2, Jane, Doe, [BankAccount | accountNumber='OTP0000002'| balance=1500.0', BankAccount | accountNumber='OTP0000004'| balance=1500.0']
