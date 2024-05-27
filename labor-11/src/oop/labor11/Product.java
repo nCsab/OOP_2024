@@ -1,6 +1,6 @@
 package oop.labor11;
 
-public class Product {
+public class Product implements Comparable<Product> {
     private int identifier;
     private String name;
     private int amount;
@@ -31,6 +31,11 @@ public class Product {
 
     public void increaseAmount(int newAmount) {
         this.amount += newAmount;
+    }
+
+    @Override
+    public int compareTo(Product other) {
+        return Integer.compare(this.identifier, other.identifier);
     }
 
     @Override
